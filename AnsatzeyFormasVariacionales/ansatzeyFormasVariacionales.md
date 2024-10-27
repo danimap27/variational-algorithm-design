@@ -162,7 +162,7 @@ En machine learning, una aplicación común es la clasificación de datos en dos
 
 El **ZZFeatureMap** puede utilizarse para crear un circuito parametrizado. Podemos pasar los puntos de datos al mapa de características ($x$) y una forma variacional separada para introducir los pesos como parámetros ($θ$).
 
-````python
+```python
 from qiskit.circuit.library import ZZFeatureMap, TwoLocal
 
 data = [0.1, 0.2]
