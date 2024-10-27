@@ -42,7 +42,14 @@ Para crear un estado como $\frac{1}{\sqrt{2}}(|100\rangle + |111\rangle)$ en un 
 - **Expresión matemática**: Este estado se representa como $|\rho\rangle = X_2 \cdot \text{CNOT}_{01} \cdot H_0 |000\rangle = \frac{1}{\sqrt{2}}(|100\rangle + |111\rangle)$.
 
 Este tipo de estado es útil en problemas que se benefician de configuraciones de probabilidad más complejas o de patrones específicos de superposición y entrelazamiento.
+```python
+qc = QuantumCircuit(3)
+qc.h(0)
+qc.cx(0, 1)
+qc.x(2)
 
+qc.draw("mpl")
+```
 ## 4. Estado de Referencia Específico para Aplicaciones
 Un estado de referencia específico para aplicaciones es un estado personalizado para un propósito particular, como en **aprendizaje automático cuántico** (Quantum Machine Learning, QML). En QML, un **mapa de características** (*feature map*) se utiliza para codificar los datos en un estado cuántico. Estos estados permiten que cada valor de un conjunto de datos esté representado en el sistema cuántico desde el inicio, optimizando la convergencia del algoritmo.
 
